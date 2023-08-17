@@ -46,4 +46,6 @@ document.getElementById('icon-underlined').addEventListener('click',function(){
     // setTextAreaValue(textArea);
 })
 
-/* nb: We are not needing to use the setTextAreaValue(textArea) function at all since we are directly changing the text area's attribute or class name here, so nothing to do with/ no need to set the new .value of the text area.!!! */
+/* 
+    nb: We are not needing to use the setTextAreaValue(textArea) function at all since we are directly changing the text area's attribute or class name here, so nothing to do with/ no need to set the new .value of the text area.!!!
+*/
