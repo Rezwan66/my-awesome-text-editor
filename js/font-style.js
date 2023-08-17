@@ -1,8 +1,8 @@
+const textArea = getTextAreaValue();
+
 // MAKE BOLD
 let isBold = false;
 document.getElementById('icon-bold').addEventListener('click', function () {
-    const textArea = getTextAreaValue();
-
     if (!isBold) {
         textArea.classList.add('font-bold');
         isBold = true;
@@ -10,15 +10,11 @@ document.getElementById('icon-bold').addEventListener('click', function () {
         textArea.classList.remove('font-bold');
         isBold = false;
     }
-
-    // setTextAreaValue(textArea);
 })
 
 // MAKE ITALIC
 let isItalic = false;
 document.getElementById('icon-italic').addEventListener('click', function () {
-    const textArea = getTextAreaValue();
-
     if (!isItalic) {
         textArea.classList.add('italic');
         isItalic = true;
@@ -26,24 +22,18 @@ document.getElementById('icon-italic').addEventListener('click', function () {
         textArea.classList.remove('italic');
         isItalic = false;
     }
-
-    // setTextAreaValue(textArea);
 })
 
 // MAKE UNDERLINE
 let isUnderlined = false;
-document.getElementById('icon-underlined').addEventListener('click',function(){
-    const textArea = getTextAreaValue();
-
-    if(!isUnderlined){
+document.getElementById('icon-underlined').addEventListener('click', function () {
+    if (!isUnderlined) {
         textArea.classList.add('underline');
         isUnderlined = true;
-    }else{
+    } else {
         textArea.classList.remove('underline');
         isUnderlined = false;
     }
-
-    // setTextAreaValue(textArea);
 })
 
 /* 

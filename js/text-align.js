@@ -1,47 +1,21 @@
-// let isLeft = false;
-document.querySelector('#left').addEventListener('click', function () {
-    const myTextArea = getTextAreaValue();
-    myTextArea.classList.toggle('text-left');
+const myTextArea = getTextAreaValue();
+// MAKE LEFT
+document.getElementById('left').addEventListener('click', function () {
+    myTextArea.style.textAlign = 'left';
+})
+// MAKE CENTERED
+document.getElementById('center').addEventListener('click', function () {
+    myTextArea.style.textAlign = 'center';
+})
+// MAKE RIGHT
+document.getElementById('right').addEventListener('click', function () {
+    myTextArea.style.textAlign = 'right';
+})
+// MAKE JUSTIFIED
+document.getElementById('justify').addEventListener('click', function () {
+    myTextArea.style.textAlign = 'justify';
 })
 
-// let isCenter = false;
-document.querySelector('#center').addEventListener('click', function () {
-    const myTextArea = getTextAreaValue();
-
-    /* if (!isCenter) {
-        myTextArea.classList.add('text-center');
-        isCenter = true;
-    } else {
-        myTextArea.classList.remove('text-center');
-        isCenter = false;
-    } */
-    myTextArea.classList.toggle('text-center');
-})
-
-// let isRight = false;
-document.querySelector('#right').addEventListener('click', function () {
-    const myTextArea = getTextAreaValue();
-
-    /* if (!isRight) {
-        myTextArea.classList.add('text-right');
-        isRight = true;
-    } else {
-        myTextArea.classList.remove('text-right');
-        isRight = false;
-    } */
-    myTextArea.classList.toggle('text-right');
-})
-
-// let isJustified = false;
-document.querySelector('#justify').addEventListener('click', function () {
-    const myTextArea = getTextAreaValue();
-
-    /* if (!isJustified) {
-        myTextArea.classList.add('text-justify');
-        isJustified = true;
-    } else {
-        myTextArea.classList.remove('text-justify');
-        isJustified = false;
-    } */
-    myTextArea.classList.toggle('text-justify');
-})
+/* 
+    nb: we used if else condition for font-styling(bold,italic,underlined) because text can be all those things at the same time. But there can only be one text alignment at a time.
+*/
