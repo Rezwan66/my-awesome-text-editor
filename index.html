@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Awesome Text Editor</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1428732692.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-        <h1>My Awesome Text Editor</h1>
-    </header>
-    <main>
 
+<body class="bg-[#94c4fe]">
+    <header>
+        <h1 class="text-center mt-12 text-5xl font-semibold text-white">My Awesome Text Editor</h1>
+    </header>
+    <main class="w-3/4 border-2 border-black mt-12 mx-auto rounded-lg">
+        <div class="grid grid-cols-3 justify-between p-6 gap-64">
+            <div>
+                <i class="fa-solid fa-bold mr-4 ml-2"></i>
+                <i class="fa-solid fa-italic mr-4"></i>
+                <i class="fa-solid fa-underline"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-align-left mr-4"></i>
+                <i class="fa-solid fa-align-center mr-4"></i>
+                <i class="fa-solid fa-align-right mr-4"></i>
+                <i class="fa-solid fa-align-justify"></i>
+            </div>
+            <div>
+                <input class="w-10 mr-4 rounded-md" type="number" name="" id="" value="16">
+                <i class="fa-solid fa-a mr-4"></i>
+                <input type="color" name="" id="">
+            </div>
+        </div>
+        <hr class="mb-6 bg-black border-none h-[2px] w-[94%] mx-auto">
+        <div class="text-center mb-4">
+            <textarea id="text-input" class="p-4 rounded-lg" name="" id="" cols="140" rows="15"></textarea>
+        </div>
     </main>
+    <script src="js/utilities.js"></script>
 </body>
+
 </html>
